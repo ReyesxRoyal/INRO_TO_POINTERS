@@ -1,0 +1,21 @@
+#include <stdio.h>
+/**
+* main - entry point
+* 
+* Return: 0 Success
+*/
+
+int main(void){
+    int number = 7;
+    printf("The value of the number variable is: %d\n", number);
+    printf("The address of the number variable is: %p\n", &number);
+
+    int* ptr = &number;
+    printf("What's the value of the ptr variable? %p\n", ptr);
+    printf("What's the value of the variable our pointer points to? %d\n", *ptr);
+
+    *ptr = 8;
+    printf("Now how has the number variable changed after we derefernced it? %d\n", number);
+
+return (0);
+}
